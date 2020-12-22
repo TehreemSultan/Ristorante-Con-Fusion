@@ -1,7 +1,9 @@
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
-$background-pale: #D1C4E9;
+$background-pale: #d1c4e9;
+$background-fwhite:floralwhite;
+
 
 // Height variables
 $carousel-item-height: 300px;
@@ -17,6 +19,7 @@ $carousel-item-height: 300px;
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
     min-height:400px;
+
 }
 
 .footer{
@@ -69,4 +72,16 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header{
+background-color: $background-dark;
+color: $background-fwhite;
+ 
+ .close{
+     color: $background-fwhite;
+ }
+}
+.modal-body{
+    background-color: $background-pale;
 }
